@@ -170,6 +170,46 @@ body {
        position:absolute;
 	 }
 		
+		   .revolver1{
+	transform-style:preserve-3d;
+	-webkit-transform-style:preserve-3d;
+ position:absolute;
+  z-index:70;
+  width:200px;
+  height:100px;
+ margin-left:40%;
+  animation:money 15s linear infinite ;
+  -webkit-animation: money 15s linear infinite ;/* Safari 4.0 - 8.0 */
+   animation-direction: alternate;
+  -webkit-animation-direction: alternate;/* Safari 4.0 - 8.0 */
+	background-image:url('https://i.pinimg.com/originals/91/3f/ad/913fad3e2ea431e2923b4972e1ce5a7e.png');
+background-size:200px 100px;
+	background-repeat:no-repeat;
+}
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes money{
+  from{
+    top:0%;
+   @-webkit-transform:rotateX(0deg);
+  
+  }
+  to{
+    top:100%;
+  @-webkit-transform:rotateX(1620deg);
+  }
+}
+@keyframes money{
+  from{
+    top:0%;
+     transform:rotateX(0deg);
+  
+  }
+  to{
+    top:100%;
+   transform:rotateX(1620deg);
+  }
+}
+		   
 		  .crazy:hover {
 			  z-index:74;
     float:none;
@@ -202,8 +242,7 @@ background-color:rgb(22, 255, 255);
    </style>
     </Header>
 	   <head>
-	
-
+	<center><div class="revolver1"></div></center>
 	 </head>
 	<Body>
      <center><h1>Sales and Marketing</h1></center>
